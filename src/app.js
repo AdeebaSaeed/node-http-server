@@ -6,7 +6,7 @@ if (!globalThis.URLPattern) {
 
 import { requestHandler } from './utils/index.js'
 
-const HOST = process.env.HOST ?? 'localhost'
+const HOST = process.env.HOST ?? '127.0.0.1'
 const PORT = process.env.PORT ?? 3000
 
 const server = http.createServer(requestHandler)
